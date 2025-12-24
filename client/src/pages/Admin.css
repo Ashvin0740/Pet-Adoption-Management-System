@@ -1,0 +1,170 @@
+.admin-page {
+  padding: 2rem;
+  min-height: calc(100vh - 80px);
+}
+
+.admin-page h1 {
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.admin-tabs button {
+  padding: 1rem 2rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6b7280;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.2s;
+}
+
+.admin-tabs button:hover {
+  color: #1f2937;
+}
+
+.admin-tabs button.active {
+  color: #667eea;
+  border-bottom-color: #667eea;
+}
+
+.admin-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-section h2 {
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.applications-table,
+.pets-table {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.application-row,
+.pet-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-radius: 10px;
+  gap: 2rem;
+}
+
+.application-details,
+.pet-details {
+  flex: 1;
+}
+
+.application-details h3,
+.pet-details h3 {
+  margin: 0 0 0.5rem 0;
+  color: #1f2937;
+}
+
+.application-details p {
+  margin: 0.5rem 0;
+  color: #4b5563;
+}
+
+.applicant-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 5px;
+}
+
+.application-actions,
+.pet-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btn-success {
+  background: #10b981;
+  color: white;
+}
+
+.btn-success:hover {
+  background: #059669;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+.status-pending {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.status-approved {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.status-rejected {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.status-cancelled {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.status-available {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.status-adopted {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.status-not-available {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .application-row,
+  .pet-row {
+    flex-direction: column;
+  }
+
+  .application-actions,
+  .pet-actions {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .application-actions button,
+  .pet-actions button {
+    flex: 1;
+  }
+}
+
